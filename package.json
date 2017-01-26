@@ -1,0 +1,42 @@
+{
+  "name": "managed-promise",
+  "version": "1.0.0",
+  "description": "A Promise that can be resolved/rejecter at will",
+  "keywords": [
+    "promise",
+    "resolve",
+    "reject",
+    "abort",
+    "cancel"
+  ],
+  "bugs": {
+    "url": "https://github.com/gabmontes/managed-promise/issues"
+  },
+  "license": "WTFPL",
+  "author": "Gabriel Montes <gabriel@utoctadel.com.ar>",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "main": "dist/index.js",
+  "repository": "gabmontes/managed-promise",
+  "scripts": {
+    "lint": "eslint lib",
+    "test": "mocha --compilers js:babel-register",
+    "coverage": "nyc --reporter=lcov --reporter=text npm test",
+    "build": "babel --presets latest -d dist/ lib/",
+    "prepublish": "npm run lint && npm test && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-latest-minimal": "^1.1.2",
+    "babel-register": "^6.16.3",
+    "chai": "^3.5.0",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2",
+    "nyc": "^9.0.1"
+  }
+}
