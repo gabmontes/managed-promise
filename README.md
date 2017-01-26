@@ -1,5 +1,7 @@
 # Managed promises
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gabmontes/managed-promise.svg)](https://greenkeeper.io/)
+
 A Promise that can be resolved/rejecter at will!
 
 Have you ever wanted to force the resolution or rejection a promise that is already "running"? Then try this tiny package!
